@@ -1,0 +1,8 @@
+spring:
+  config:
+    import: optional:file:../.env[.properties]
+
+app:
+  auth:
+    cookie:
+      secure: ${AUTH_COOKIE_SECURE:false}
